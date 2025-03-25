@@ -1,7 +1,6 @@
-
-        <?php
+<?php
         include 'views/header.php';
-        echo "HOME";
+        echo "PROFILE";
         include 'views/footer.php';
-        ?>
+     ?>
     

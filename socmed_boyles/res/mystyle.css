@@ -1,9 +1,177 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : Jan 21, 2025, 3:53:06 PM
-    Author     : CCTC1
-*/
+body{
+    background-color: #000000e0;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Teko';
+}
+.navbar{
+    padding: 1em;
+    background-color: #5C7285;
+}
 
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+} 
+.navbar a:hover{
+    background-color: #5C7285;
+}
+
+.navbar a:active{
+    background-color: #5E7285
+}
+#signinform {
+    background-color: #0f0707;
+    width: 300px;
+    padding: 30px;
+    margin: 12vh auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#signinform input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border:thin;
+}
+
+#signinform input[type='submit'] {
+    width: 100%;
+    background-color: #3d443a;
+}
+
+#signinform input[type='submit']:hover {
+    background-color: rgb(109, 28, 28);
+    color: white;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 5vh auto;
+    text-align: center;
+}
+
+.pass{
+    padding-left: 40px;
+    text-decoration: none;
+    color: #5C7285
+}
+
+.label{
+    font-family: 'Teko';
+}
+
+#registerform{
+    background-color: #0f0707;
+    width: 245px;
+    padding: 30px;
+    margin: 12vh auto;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Teko';
+}
+#registerform input {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: #fff;
+}
+
+#registerform input[type='submit'] {
+    width: 80%;
+    background-color: #6b1a1a98;
+    color: #fff;
+}
+
+#registerform input[type='submit']:hover {
+    background-color: rgba(0, 2, 150, 0.699);
+    color: rgb(255, 255, 255);
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 5vh auto;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #e7d187;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #cc0066;
+    color: white;
+}
+
+.btn{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.posts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+
+.post {
+    background-color: #330000;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post p {
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.cta {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #770011;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.end{
+    padding-left: 5%;
+}
+.error{
+    color: #770011;
+}
