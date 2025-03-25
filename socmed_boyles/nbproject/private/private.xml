@@ -12,13 +12,14 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/model/signout_user.php</file>
-            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/signup.php</file>
             <file>file:/C:/XAMPPP/htdocs/socmed_boyles/res/mystyle.css</file>
-            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/model/Register_user.php</file>
-            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/profile.php</file>
-            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/views/header.php</file>
+            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/signup.php</file>
             <file>file:/C:/XAMPPP/htdocs/socmed_boyles/model/dbconnection.php</file>
+            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/profile.php</file>
+            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/model/Register_user.php</file>
+            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/views/header.php</file>
+            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/index.php</file>
+            <file>file:/C:/XAMPPP/htdocs/socmed_boyles/model/signout_user.php</file>
             <file>file:/C:/XAMPPP/htdocs/socmed_boyles/model/signin_user.php</file>
             <file>file:/C:/XAMPPP/htdocs/socmed_boyles/signin.php</file>
         </group>

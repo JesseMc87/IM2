@@ -1,5 +1,7 @@
 <?php
 
+require 'dbconnection.php';
+
 $un = htmlspecialchars ($_POST['uname']);
 $fn = htmlspecialchars ($_POST['fname']);
 $ln = htmlspecialchars ($_POST['lname']);
@@ -8,6 +10,15 @@ $gen = htmlspecialchars ($_POST['gender']);
 $bdate = htmlspecialchars ($_POST['bdate']);
 $pass = htmlspecialchars ($_POST['pass']);
 $cpass = htmlspecialchars ($_POST['conpass']);
+
+echo "Username: $un <br>";
+echo "Firstname: $fn <br>";
+echo "Lastname: $ln <br>";
+echo "Email: $em <br>";
+echo "Gender: $gen <br>";
+echo "Birthdate:".date('M-d-y', strtotime($bdate))." <br>";
+echo "Password: $pass <br>";
+echo "Confirm Password: $cpass <br>";
 
 $con=create_connection();
 
@@ -32,22 +43,23 @@ if($result_email->num_rows>0){
 }
 
 // confirm password
-$password_ERROR=0;
+$password_error=0;
 if(strcmp ($pass, $cpass)!=0){
-    $password_ERROR=1;
+    $password_error=1;
 }
 
 //Insert user
-if($uname_error==0 && $email_error==0 && $password_ERROR==0) {
+if($uname_error==0 && $email_error==0 && $password_error==0) {
 
 $sql_insert="INSERT INTO user VALUES(0,'$un','$fn','$ln','$em','$gen','$bdate','$pass')";
 $con->query($sql);
 
-    header("location:.../signin.php");
+    header("location:.../signin.php?reg_success=1");
 }
 
 
 else{
-    header("location:.../signin.php?uname_error=$ename_error"
-    . "&email_");
+    header("location:.../signup.php?uname_error=$ename_error"
+    . "&email_error=$email_error"
+    . "&password_error=$password_error");
 }

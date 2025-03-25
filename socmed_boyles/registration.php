@@ -1,16 +1,32 @@
 <?php
 include 'views/header.php';
 ?>
-<form id="loginform" action="" method="POST">
+<form id="loginform" action="model/Register_user.php" method="POST">
     <label for="uname">Username</label>
+    <?php
+        if(isset($_GET['uname_error'])){
+            if($_GET['uname_error']==1){
+                echo"<span class='error_msg'>*Invalid Username</span>";
+            }
+        }
+      ?>
+
        <input type="text" name="uname" id="uname" placeholder="Username" required=>
-    <label for="email">Email</label>
-       <input type="text" name="email" id="email" placeholder="Email" required=>
-    <label for="fname">First Name</label>
+       <label for="fname">First Name</label>
        <input type="text" name="fname" id="fname" placeholder="First Name" required=>
-    <label for="lname">Last Name</label>
+       <label for="lname">Last Name</label>
        <input type="text" name="lname" id="lname" placeholder="Last Name" required=>
-    
+       <label for="email">Email</label>
+
+       <?php
+        if(isset($_GET['email_error'])){
+            if($_GET['email_error']==1){
+                echo"<span class='error_msg'>*Invalid Email</span>";
+            }
+        }
+      ?>
+          <input type="text" name="email" id="email" placeholder="Email" required=>
+       
     <div  id="cbgender">
         <label for="gender">Gender  </label>
         <select name="gender" id="gender">

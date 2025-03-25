@@ -20,7 +20,8 @@ session_start();
                 
             
            ?> 
-            <a href="./profile.php">Profile</a>
+            <a href="./profile.php"><?php echo $_SESSION ['fname']." ".$_SESSION['lname'];?></a>
+            
             <a href="./model/signout_user.php">Log Out</a>
            <?php
                 }
