@@ -9,15 +9,6 @@ $bdate = htmlspecialchars ($_POST['bdate']);
 $pass = htmlspecialchars ($_POST['pass']);
 $cpass = htmlspecialchars ($_POST['conpass']);
 
-echo "Usename: $un <br>";
-echo "Firstname: $fn <br>";
-echo "Lastname: $ln <br>";
-echo "Email: $em <br>";
-echo "Gender: $gen <br>";
-echo "Birthdate:" .date ('M/d/y', stratotime($bdate))."<br>";
-echo "Password: $pass <br>";
-echo "Confirm Password: $cpass <br>";
-
 $con=create_connection();
 
 if($con->connect_error){

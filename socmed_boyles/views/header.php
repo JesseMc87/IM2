@@ -21,7 +21,7 @@ session_start();
             
            ?> 
             <a href="./profile.php">Profile</a>
-            <a href="./models/signout_user.php">Log Out</a>
+            <a href="./model/signout_user.php">Log Out</a>
            <?php
                 }
                 else{

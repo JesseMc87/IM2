@@ -1,7 +1,7 @@
 <?php
 include 'views/header.php';
 ?>
-<form  id="signinform" action="models/signin_user.php" method="POST">
+<form  id="signinform" action="model/signin_user.php" method="POST">
     <label for="uname">Username</label>
     <input type="text" name="uname" id="uname" placeholder="Username or Email" required>
     <label for="password">Password</label>
